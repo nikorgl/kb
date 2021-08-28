@@ -1,6 +1,6 @@
 # Arch Linux Install
 
-yes | pacman -S terminus-font && setfont ter-v32b
+yes | pacman -Sy terminus-font && setfont ter-v32b
 
 #### To verify the boot mode, list the efivars directory:
 ls /sys/firmware/efi/efivars
