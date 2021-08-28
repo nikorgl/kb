@@ -66,7 +66,7 @@ systemctl enable NetworkManager
 ln -sf /usr/share/zoneinfo/Asia/Barnaul /etc/localtime
 
 hwclock --systohc
-#### Edit /etc/locale.gen and uncomment en_US.UTF-8 UTF-8 and other needed locales. Generate the locales by running:
+#### Edit /etc/locale.gen and uncomment en_US.UTF-8, en_GB.UTF-8, ru_RU.UTF-8. Generate the locales by running:
 locale-gen
 
 vim /etc/locale.conf
