@@ -3,6 +3,7 @@
 ### Convert DVD (VOB files)
 ffmpeg -i "concat:$(echo *.VOB|tr \  \|)" combined.mp4
 
+
 ### Rename video files with their creation dates
 for i in *.MOV; do mv "$i" $(ffprobe -v quiet -select_streams v:0  -show_entries stream_tags=creation_time -of default=noprint_wrappers=1:nokey=1 "$i"  | awk '{print substr($1,1,20)}')mov ; done
 
