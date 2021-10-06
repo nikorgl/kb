@@ -15,6 +15,9 @@ for i in *.jpg; do mv "$i" $(exiv2 "$i" | grep timestamp | sed -e 's#.*\s:\s\(\)
 #### Rotate images
 for photo in *.jpg ; do convert $photo -rotate 90 $photo ; done
 
+#### Set one width (or height) for images 
+for i in *.jpg ; do convert -resize '1000x' -quality 85 "$i" "$i"; done
+
 ### Unoconv
 
 #### Convert doc-file to pdf
