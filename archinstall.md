@@ -65,6 +65,9 @@ systemctl enable NetworkManager
 
 ln -sf /usr/share/zoneinfo/Asia/Barnaul /etc/localtime
 
+####enable datetime syncing
+timedatectl set-ntp true
+
 hwclock --systohc
 #### Edit /etc/locale.gen and uncomment en_US.UTF-8, en_GB.UTF-8, ru_RU.UTF-8. Generate the locales by running:
 locale-gen
