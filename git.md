@@ -6,6 +6,8 @@ git branch -a
 ### Насильно протолкнуть изменение, если в удаленном репозитории уже есть новые коммиты поверх текущего
 git push -f origin master
 
+### Delete branch and all commits
+git update-ref -d HEAD
 
 ### показать все новые файлы 
 git ls-files --others --exclude-standard
